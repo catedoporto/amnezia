@@ -136,6 +136,10 @@ article div p{
     margin: 1rem;
 }
 
+.nav-link {
+    display: inline;
+}
+
 /*redes*/
 .iconosRedes{
     background: rgb(255,255,255);
