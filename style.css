@@ -81,6 +81,7 @@ html{
     --bs-nav-link-hover-color: #adb5bd;
     text-decoration: none;
     list-style: none;
+    flex-wrap: nowrap;
 }
 
 /*imagen inicio*/
