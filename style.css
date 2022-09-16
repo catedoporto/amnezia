@@ -77,8 +77,10 @@ html{
     display: inline-block;
 }
 
-.lista {
+.touchgrey {
     --bs-nav-link-hover-color: #adb5bd;
+    text-decoration: none;
+    list-style: none;
 }
 
 /*imagen inicio*/
