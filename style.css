@@ -65,6 +65,7 @@ html{
     margin-top: 4rem;
 }
 
+
 .containerHeader nav ul li a{
     font-family: 'Michroma', sans-serif;
     text-decoration: none;
@@ -76,8 +77,8 @@ html{
     display: inline-block;
 }
 
-nav ul li{
-    display: inline-block;
+.nav {
+    --bs-nav-link-hover-color: #adb5bd;
 }
 
 /*imagen inicio*/
