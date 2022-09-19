@@ -316,10 +316,19 @@ section div p{
         font-size: 3rem;
         padding: 0 0 0 1.5rem;
     }
-
+    .containerHeader {
+        justify-content: space-evenly;
+    }
     .containerHeader nav ul li a {
         font-size: 1.5rem;
         margin: 1rem;
+    }
+
+    /*nav secciones*/
+    .touchgrey{
+        --bs-nav-link-padding-x: 0;
+        --bs-nav-link-padding-y: 0;
+        justify-content: space-around;
     }
 
     /*imagen encabezado*/
@@ -393,6 +402,11 @@ section div p{
     }
     .navegacion {
         margin-top: 0;
+    }
+
+    .touchgrey{
+        --bs-nav-link-padding-x: 0;
+        --bs-nav-link-padding-y: 0;
     }
     .containerHeader{
         flex-direction: column;
