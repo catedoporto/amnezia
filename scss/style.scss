@@ -1,0 +1,330 @@
+@import "./base/variables.scss";
+@import "./componentes/header";
+@import "./componentes/global";
+@import "./componentes/footer";
+
+
+
+
+/*imagen inicio*/
+
+.imagenIndex{
+    width: 100%;
+    padding: 12rem 0 5rem;
+}
+
+.texto_video{
+    font-size: $medida-media*4;
+    text-align: center;
+    line-height: $medida-media*5;
+    color: $color-secundario;
+}
+
+/*imagenes de muestra*/
+
+.imagenesMuestra{
+    h3{
+    font-size: $medida-media*2;
+    text-align: center;
+    line-height: $medida-media*4;
+    }
+
+    article div{
+        padding: 1.5rem;
+        margin: 1.5rem;
+        border: solid 0.02rem $color-touch;
+
+        p{
+            font-size: 1.5rem;
+            font-weight: 200;
+            color: $color-secundario;
+            margin: 1.5rem;
+            padding: 1.5rem;
+        }
+    }
+}
+
+.imagenesFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: $medida-media;
+
+    div img{
+        width: 250px;
+        height: 400px;
+    }
+}
+
+.volverIndex{
+    font-size: $medida-media;
+    color: $color-secundario;
+    padding: 1.5rem;
+    border: solid 0.1rem $color-secundario;
+    margin: 1rem;
+}
+
+.nav-link {
+    display: inline;
+}
+
+
+
+/*tipografia secciones*/
+
+.tipografiaBody{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: $color-principal;
+    color: $color-secundario;
+} 
+
+
+/*seccion jean*/
+.imagenSeccionJean{
+    padding: 1.5rem;
+    width: $medida-media*16;
+    height: $medida-media*20;
+}
+
+.imagenFlexJean{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: $medida-media +1;
+    
+    div{
+        border: solid 0.02rem $color-touch;
+        padding: $medida-media;
+        margin: $medida-media;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*seccion calzado*/
+
+.imagenSeccionCalzado{
+    padding: 1.5rem;
+    width: $medida-media*16;
+    height: $medida-media*20;
+}
+
+.imagenFlexCalzado{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
+
+    div{
+        border: solid 0.02rem $color-touch;
+        padding: $medida-media;
+        margin: $medida-media;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+} 
+
+/*seccion kimonos*/
+
+.imagenSeccionKimonos{
+    padding: 1.5rem;
+    width: $medida-media*16;
+    height: $medida-media*20;
+}
+
+.imagenFlexKimonos{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
+
+    div{
+        border: solid 0.02rem $color-touch;
+        padding: $medida-media;
+        margin: $medida-media;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+} 
+
+/*bordes de la imagenes*/
+section div p{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 0.5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    /*barra navegacion*/
+    .containerHeader {
+        justify-content: space-evenly;
+
+        h1{
+            font-size: 3rem;
+            padding: 0 0 0 1.5rem;
+        }
+        nav ul li a {
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+    }  
+    
+    /*nav secciones*/
+    .touchgrey{
+        --bs-nav-link-padding-x: 0;
+        --bs-nav-link-padding-y: 0;
+        justify-content: space-around;
+    }
+
+    /*imagen encabezado*/
+    .imagenIndex{
+        padding: 8rem 0 0rem;
+    }
+
+    .texto_video{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    section h3 {
+        font-size: 3rem;
+        line-height: 6rem;
+    }
+
+    /*imagenes index*/
+    .imagenesFlex {
+        justify-content: center;
+    }    
+
+    .volverIndex {
+        font-size: 1.5rem;
+    }
+
+    /*footer*/
+    .iconosRedes {
+        margin: 4rem 0;
+
+        h3 {
+            font-size: 3rem;
+        }
+    }
+
+    .contactoSucursales {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /*secciones*/
+
+    .imagenFlexJean , .imagenFlexKimonos , .imagenFlexCalzado{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagenSeccionJean , .imagenSeccionKimonos , .imagenSeccionCalzado{
+        width: 25rem;
+        height: 33rem;
+    }
+
+    section div p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    /*barra navegacion*/
+    .containerHeader{
+        flex-direction: column;
+        align-items: unset;
+
+        h1{
+            font-size: 2rem;
+            padding: 1.5rem 0rem 0rem 1.5rem;
+        }
+        nav ul li a {
+            font-size: 1rem;
+            margin: 1rem;
+        }
+    }
+    .navegacion {
+        margin-top: 0;
+    }
+
+    .touchgrey{
+        --bs-nav-link-padding-x: 0;
+        --bs-nav-link-padding-y: 0;
+    }
+    /*cuerpo index*/
+    .imagenIndex{
+        padding: 8rem  0 0;
+    }
+    .texto_video {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    section h3 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    /*imagenes*/
+    .imagenesFlex {
+        justify-content: space-evenly;
+        padding: 0;
+        div img {
+            width: 110px;
+            height: 165px;
+        }
+    }   
+    .volverIndex {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    section div p {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+        margin: 0.5rem;
+    }
+
+    /*footer index*/
+    .iconosRedes {
+        text-align: center;
+        padding: 2rem;
+        margin: 2rem 0;
+        text-align: center;
+        padding: 0;
+        h3 {
+            display: none;
+        }
+    }
+    .contactoSucursales {
+        font-size: 1.5rem;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    /*seccion jean imagenes*/
+
+    .imagenSeccionJean , .imagenSeccionCalzado , .imagenSeccionKimonos{
+        width: 12rem;
+        height: 21rem;
+    }
+
+    .imagenFlexJean , .imagenFlexCalzado , .imagenFlexKimonos{   
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 3rem 0;
+    }
+}

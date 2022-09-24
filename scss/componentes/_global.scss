@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 62.5%;   /*1 rem 10px*/
+}
+/*body seccion index*/
+
+.tipografiaAlegreya{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: $color-principal;
+    color: $color-secundario;
+}
+.textdec-none{
+    text-decoration: none;
+}
+
+/*animaciones*/
+.transition{
+    transition: all 1s;
+}
+.scale:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}

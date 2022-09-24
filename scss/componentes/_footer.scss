@@ -1,0 +1,58 @@
+/*redes*/
+.iconosRedes{
+    background: radial-gradient(circle, rgba(255,255,255,1) 34%, rgba(0,0,0,1) 100%);
+    color: $color-principal;
+    text-align: center;
+    padding: $medida-media;
+    margin: 6rem 0;
+
+    h3{
+        font-size: $medida-media*4;
+    }
+
+    a i{
+        font-size: $medida-media*2;
+        font-weight: $medida-media;
+        padding: $medida-media*2;
+        color: $color-principal;
+    }
+}
+
+/*contacto y sucursales*/
+.contactoSucursales{
+    font-size: $medida-media;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: $color-secundario;
+
+    .contacto_tel_mail ul{
+        display: flex;
+        flex-direction: column;
+    
+        li{
+            list-style: none;
+        }
+    }
+
+    .sucursalesFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/*whatsapp*/
+.whatsappfijo{
+    font-size: $medida-media*2;
+    color: $color-secundario;
+    position: fixed;
+    width: $medida-media*2;
+    height: $medida-media*2;
+    line-height: 4.5rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+
+}

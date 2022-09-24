@@ -98,7 +98,7 @@ html{
     color: white;
 }
 
-section h3{
+.imagenesMuestra h3{
     font-size: 4rem;
     text-align: center;
     line-height: 8rem;
@@ -211,13 +211,6 @@ article div p{
     background-color: black;
     color: white;
 } 
-
-.BarraNavegacion{
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    margin-top: 4rem;
-}
 
 /*bordes de la imagenes*/
 .imagenFlexJean div{
