@@ -1,0 +1,78 @@
+
+
+/*seccion jean*/
+.imagenSeccionJean{
+    padding: 1.5rem;
+    width: $medida-media*16;
+    height: $medida-media*20;
+}
+
+.imagenFlexJean{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: $medida-media +1;
+    
+    div{
+        border: solid 0.02rem $color-touch;
+        padding: $medida-media;
+        margin: $medida-media;
+        @extend %ubicacioncol;
+        align-items: center;
+    }
+}
+
+/*seccion calzado*/
+
+.imagenSeccionCalzado{
+    padding: 1.5rem;
+    width: $medida-media*16;
+    height: $medida-media*20;
+}
+
+.imagenFlexCalzado{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
+
+    div{
+        border: solid 0.02rem $color-touch;
+        padding: $medida-media;
+        margin: $medida-media;
+        @extend %ubicacioncol;
+        align-items: center;
+    }
+} 
+
+/*seccion kimonos*/
+
+.imagenSeccionKimonos{
+    padding: 1.5rem;
+    width: $medida-media*16;
+    height: $medida-media*20;
+}
+
+.imagenFlexKimonos{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
+
+    div{
+        border: solid 0.02rem $color-touch;
+        padding: $medida-media;
+        margin: $medida-media;
+        @extend %ubicacioncol;
+        align-items: center;
+    }
+} 
+
+/*bordes de la imagenes*/
+section div p{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 0.5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+}

@@ -7,7 +7,7 @@
     margin: 6rem 0;
 
     h3{
-        font-size: $medida-media*4;
+        font-size: 5rem;
     }
 
     a i{
@@ -20,25 +20,28 @@
 
 /*contacto y sucursales*/
 .contactoSucursales{
-    font-size: $medida-media;
-    display: flex;
-    flex-direction: row;
+    @include titulos (2rem , white);
+    @extend %ubicacionrow;
     justify-content: space-around;
     align-items: center;
-    color: $color-secundario;
+    .contacto_tel_mail{
+        @extend %ubicacioncol;
+        justify-content: center;
+        align-items: center;
 
-    .contacto_tel_mail ul{
-        display: flex;
-        flex-direction: column;
-    
-        li{
-            list-style: none;
+        ul{
+            @extend %ubicacioncol;
+            align-items: center;
+        
+            li{
+                list-style: none;
+            }
         }
     }
+    
 
     .sucursalesFlex{
-        display: flex;
-        flex-direction: column;
+        @extend %ubicacioncol;
         justify-content: space-between;
         align-items: center;
     }
@@ -46,8 +49,7 @@
 
 /*whatsapp*/
 .whatsappfijo{
-    font-size: $medida-media*2;
-    color: $color-secundario;
+    @include titulos (4rem , white);
     position: fixed;
     width: $medida-media*2;
     height: $medida-media*2;

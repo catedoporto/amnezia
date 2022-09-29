@@ -1,6 +1,11 @@
-@import "./base/variables.scss";
+@import "./base/variables";
+@import "./base/mixin";
+@import "./base/extend";
+@import "./base/maps";
 @import "./componentes/header";
 @import "./componentes/global";
+@import "./componentes/index";
+@import "./componentes/secciones";
 @import "./componentes/footer";
 
 

@@ -1,0 +1,71 @@
+/*imagen inicio*/
+
+.imagenIndex{
+    width: 100%;
+    padding: 12rem 0 5rem;
+}
+
+.texto_video{
+    font-size: $medida-media*4;
+    text-align: center;
+    line-height: $medida-media*5;
+    color: $color-secundario;
+}
+
+/*imagenes de muestra*/
+
+.imagenesMuestra{
+    h3{
+    font-size: $medida-media*2;
+    text-align: center;
+    line-height: $medida-media*4;
+    }
+
+    article div{
+        padding: 1.5rem;
+        margin: 1.5rem;
+        border: solid 0.02rem $color-touch;
+
+        p{
+            font-size: 1.5rem;
+            font-weight: 200;
+            color: $color-secundario;
+            margin: 1.5rem;
+            padding: 1.5rem;
+        }
+    }
+}
+
+.imagenesFlex{
+    @extend %ubicacionrow;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: $medida-media;
+
+    div img{
+        width: 250px;
+        height: 400px;
+    }
+}
+
+.volverIndex{
+    font-size: $medida-media;
+    color: $color-secundario;
+    padding: 1.5rem;
+    border: solid 0.1rem $color-secundario;
+    margin: 1rem;
+}
+
+.nav-link {
+    display: inline;
+}
+
+
+
+/*tipografia secciones*/
+
+.tipografiaBody{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: $color-principal;
+    color: $color-secundario;
+} 

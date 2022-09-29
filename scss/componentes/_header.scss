@@ -1,14 +1,13 @@
 /*header y lista de navegacion*/
 
 .containerHeader{
-    text-decoration: none;
+    text-decoration: map-get($header, decoration);
     width: 100%;
-    border-bottom: 0.1rem solid $color-secundario;
-    display: flex;
-    flex-direction: row;
+    border-bottom: map-get($header, borde-inferior);
+    @extend %ubicacionrow;
     justify-content: space-between;
     align-items: center;
-    background: $color-principal;
+    background: map-get($header, bgheader);
     background: linear-gradient(0deg, $color-principal 84%, rgba(167,167,167,1) 100%, rgba(255,255,255,1) 100%);
 
     h1{
@@ -33,15 +32,13 @@
 }
 
 .navegacion{
-    display: flex;
-    flex-direction: column;
+    @extend %ubicacioncol;
     justify-content: end;
     align-items: flex-end;
     margin-top: $medida-media*2;
 
     div{
-        display: flex;
-        flex-direction: row;
+        @extend %ubicacionrow;
         padding: 1rem $medida-media;
         margin-top: $medida-media;
 
@@ -52,8 +49,7 @@
     }
 
     nav ul{
-        display: flex;
-        flex-direction: row;
+        @extend %ubicacionrow;
         justify-content: flex-end;
     }
 }
