@@ -71,7 +71,7 @@ html {
 
 /*body seccion index*/
 .tipografiaBody {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .tipografiaAlegreya {
