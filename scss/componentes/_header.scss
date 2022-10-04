@@ -4,6 +4,7 @@
     text-decoration: map-get($header, decoration);
     width: 100%;
     border-bottom: map-get($header, borde-inferior);
+    overflow-x: hidden;
     @extend %ubicacionrow;
     justify-content: space-between;
     align-items: center;
