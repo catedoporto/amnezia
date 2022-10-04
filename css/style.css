@@ -11,8 +11,8 @@
 /*header y lista de navegacion*/
 .containerHeader {
   text-decoration: none;
-  width: 100%;
   border-bottom: 0.1rem solid white;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background: black;
@@ -70,6 +70,10 @@ html {
 }
 
 /*body seccion index*/
+.tipografiaBody {
+  overflow-x: hidden;
+}
+
 .tipografiaAlegreya {
   font-family: "Alegreya Sans SC", sans-serif;
   background-color: black;
