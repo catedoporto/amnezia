@@ -3,7 +3,7 @@
 .containerHeader{
     text-decoration: map-get($header, decoration);
     border-bottom: map-get($header, borde-inferior);
-    overflow-x: hidden;
+    width: 100%;
     @extend %ubicacionrow;
     justify-content: space-between;
     align-items: center;

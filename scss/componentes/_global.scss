@@ -7,6 +7,10 @@ html{
 }
 /*body seccion index*/
 
+.tipografiaBody{
+    overflow-x: hidden;
+}
+
 .tipografiaAlegreya{
     font-family: 'Alegreya Sans SC', sans-serif;
     background-color: $color-principal;
