@@ -505,6 +505,11 @@ section div p {
   .imagenIndex {
     padding: 8rem 0 0;
   }
+  .imagenFlexi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .texto_video {
     font-size: 2rem;
     line-height: 4rem;
