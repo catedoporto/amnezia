@@ -1,3 +1,33 @@
+footer {
+    margin: 5rem 0;
+}
+
+/*suscripcion*/
+.bordesuscripcion{
+    border: white 0.1rem solid;
+}
+
+.suscripcion{
+    margin: 2rem 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .boton{
+        background-color: white;
+        color: black;
+    }
+
+    .suscrip{
+        margin: 0 6rem;
+        padding: 1rem;
+        font-size: medium;
+    }
+}
+
+
 /*redes*/
 .iconosRedes{
     background: radial-gradient(circle, rgba(255,255,255,1) 34%, rgba(0,0,0,1) 100%);

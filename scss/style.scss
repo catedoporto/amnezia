@@ -215,6 +215,12 @@ section div p{
     }
 
     /*footer*/
+
+    .suscripcion {
+        margin: 0;
+        flex-direction: inherit;
+        padding: 1rem;
+    }
     .iconosRedes {
         margin: 4rem 0;
 
@@ -309,6 +315,10 @@ section div p{
     }
 
     /*footer index*/
+    .suscripcion {
+        flex-direction: column;
+    }
+
     .iconosRedes {
         text-align: center;
         padding: 2rem;
